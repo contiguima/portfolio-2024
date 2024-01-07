@@ -1,4 +1,41 @@
-body, home{
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@400;500;700;800&display=swap');
+
+:root{
+  --principal-font:  'Montserrat', sans-serif;
+  --sec-font: 'Courier Prime', monospace;
+}
+
+body, .app{
   margin:0;
   padding: 0;
+}
+
+
+
+/*home section*/
+
+.home{
+  padding-top: 60px; /*nav height*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.left-bar{
+  background-color: black;
+  color: #d9d9d9;
+  padding: 2em;
+  height: 100vh;
+}
+
+.left-bar h2{
+  font-family: var(--sec-font);
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.left-bar ul{
+  list-style: none;
+  font-family: var(--principal-font);
 }
