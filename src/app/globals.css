@@ -8,34 +8,92 @@
 body, .app{
   margin:0;
   padding: 0;
+  background-color: #d9d9d9;
 }
 
 
 
 /*home section*/
 
+/*reminder: 100vw = 1440 px*/
+
 .home{
   padding-top: 60px; /*nav height*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2em;
 }
 
 .left-bar{
   background-color: black;
   color: #d9d9d9;
   padding: 2em;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
 }
 
 .left-bar h2{
   font-family: var(--sec-font);
-  font-size: 45px;
+  font-size: clamp(26px, 3.5vw, 50px);
   font-weight: 100;
+  line-height: 10px;
 }
 
 .left-bar ul{
   list-style: none;
   font-family: var(--principal-font);
+  font-size:  clamp(16px, 1.4vw, 22px);
+  margin:0;
+  margin-left: -35px;
+}
+.picture{
+  max-width: 240px;
+  height: auto;
+  border-radius: 200px;
+  align-self: center;
+}
+
+.left-bar h3{
+  font-family: var(--sec-font);
+  font-weight: 100;
+  font-size:  clamp(16px, 1.4vw, 22px);
+  text-decoration: underline;
+  align-self: center;
+}
+
+.home-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.home-icon{
+  max-width: 70px;
+  height: auto;
+}
+
+.presentation{
+  padding: 2em;
+}
+.presentation h1{
+  font-family: var(--principal-font);
+  font-weight: 700;
+  line-height:1.2em;
+  font-size: clamp(40px, 4.9vw, 75px);
+  margin-bottom: -20px;
+}
+
+.presentation h2{
+  font-family: var(--principal-font);
+  font-weight: 700;
+  opacity: 0.8;
+  font-size: clamp(32px, 2.45vw, 40px)
+}
+
+.presentation p{
+  font-family: var(--sec-font);
+  font-weight: 200;
+  font-size: clamp(16px, 1.4vw, 22px);
 }
