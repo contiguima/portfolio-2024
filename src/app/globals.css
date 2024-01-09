@@ -30,7 +30,6 @@ body, .app{
   padding: 2em;
   display: flex;
   flex-direction: column;
-  height: 85vh;
 }
 
 .left-bar h2{
@@ -72,6 +71,7 @@ body, .app{
 .home-icon{
   max-width: 70px;
   height: auto;
+  cursor: pointer;
 }
 
 .presentation{
@@ -96,4 +96,77 @@ body, .app{
   font-family: var(--sec-font);
   font-weight: 200;
   font-size: clamp(16px, 1.4vw, 22px);
+  max-width: 550px;
+
+}
+
+
+.buttons-home{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap:0.5em;
+}
+
+.buttons-home button{
+  background-color: black;
+  color: #d9d9d9;
+  border: 0;
+  width: 210px;
+  height: 70px;
+  font-family: var(--principal-font);
+  font-size: clamp(18px, 1.3vw, 20px);
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+}
+
+.buttons-home button:hover{
+  background: linear-gradient(to right, #888888, #3d3d3d);
+  cursor: pointer;
+}
+
+.cta-home{
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  text-align: left;
+}
+
+.music-home{
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  text-align: right;
+}
+
+/*mq for home section, first breakpoint is for the left-bar presentation structure to mantain the aesthetics*/
+
+@media (max-width: 1110px) {
+
+  .left-bar {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .presentation {
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 500px){
+  .buttons-home {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+
+
+  
+
+
 }

@@ -13,6 +13,8 @@ import githubLogo from "../../public/assets/icons/github_icon.png";
 import linkedinLogo from "../../public/assets/icons/linkedin_icon.png";
 import xLogo from "../../public/assets/icons/x_icon.png";
 import fiverrLogo from "../../public/assets/icons/fiverr_icon.png";
+import eyesIcon from "../../public/assets/icons/eyes_icon.png";
+import spotifyLogo from "../../public/assets/icons/spotify_icon.png";
 
 
 export default function Home() {
@@ -50,9 +52,20 @@ export default function Home() {
      <div className="presentation">
       <h1>Science, <br/>technology</h1>
       <h2><i>and lots of curiosity</i></h2>
-      <p>If you want to know where to find me, it's <br/> probably by learning something new. I love <br/> working in dynamic environments, which allow me <br/> to combine my knowledge in processes, <br/> technology and project management to generate <br/> products with a positive impact on people's lives.</p>
+      <p>If you want to know where to find me, it's probably by learning something new. I love working in dynamic environments, which allow me to combine my knowledge in processes, technology and project management to generate products with a positive impact on people's lives.</p>
       <div className="buttons-home">
-        <button className="cta-home">SEE WHAT I'M UP TO</button>
+        <button className="cta-home"> 
+          <span>SEE WHAT <br/> I'M UP TO</span>
+          <Image
+          className="cta-icon" 
+          src={eyesIcon}/>
+          </button>
+        <button className="music-home">
+         <span>LISTEN TO <br/> A SONG</span> 
+         <Image
+         className="music-icon"
+         src={spotifyLogo}/>
+         </button>
       </div>
      </div>
     </section>
