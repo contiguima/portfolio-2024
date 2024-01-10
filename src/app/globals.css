@@ -22,6 +22,7 @@ body, .app{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .left-bar{
@@ -34,7 +35,7 @@ body, .app{
 
 .left-bar h2{
   font-family: var(--sec-font);
-  font-size: clamp(26px, 3.5vw, 50px);
+  font-size: clamp(22px, 3.5vw, 50px);
   font-weight: 100;
   line-height: 10px;
 }
@@ -76,6 +77,8 @@ body, .app{
 
 .presentation{
   padding: 2em;
+  display: flex;
+  flex-direction: column;
 }
 .presentation h1{
   font-family: var(--principal-font);
@@ -95,7 +98,7 @@ body, .app{
 .presentation p{
   font-family: var(--sec-font);
   font-weight: 200;
-  font-size: clamp(16px, 1.4vw, 22px);
+  font-size: clamp(16px, 1.4vw, 25px);
   max-width: 550px;
 
 }
@@ -163,10 +166,7 @@ body, .app{
     justify-content: space-between;
   }
 
-
-
-
-  
-
-
+  .music-home{
+    margin-left: calc(100% - 210px);
+  }
 }
