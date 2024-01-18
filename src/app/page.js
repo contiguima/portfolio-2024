@@ -3,6 +3,9 @@ import Image from "next/image";
 
 //Components
 import Navbar from "./components/navbar/Navbar"
+import BorderComponent from "./components/border_component/BorderComponent";
+import ProjectCardBig from "./components/projects_card/ProjectCardBig";
+
 
 //Styles
 import "./globals.css";
@@ -15,7 +18,7 @@ import xLogo from "../../public/assets/icons/x_icon.png";
 import fiverrLogo from "../../public/assets/icons/fiverr_icon.png";
 import eyesIcon from "../../public/assets/icons/eyes_icon.png";
 import spotifyLogo from "../../public/assets/icons/spotify_icon.png";
-import BorderComponent from "./components/border_component/BorderComponent";
+import oxygenImg from "../../public/assets/images/oxygen_project_img.png";
 
 
 export default function Home() {
@@ -71,13 +74,19 @@ export default function Home() {
      </div>
     </section>
     <section className="projects">
-      <BorderComponent/>
+      {/*<BorderComponent/>*/}
       <div className="projects-text">
       <h2 style={{opacity:0.8}}><b>Some really cool</b></h2>
       <h1>PROJECTS</h1>
       <h2><i>I've worked on</i></h2>
       </div>
       <div className="projects-container">
+        <ProjectCardBig
+        tag= "FRONTEND"
+        image={oxygenImg}
+        title="Oxygen Token"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales"
+        stack = "HTML - CSS - NextJS"/>
 
       </div>
     </section>
