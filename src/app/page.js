@@ -85,8 +85,10 @@ export default function Home() {
         tag= "FRONTEND"
         image={oxygenImg}
         title="Oxygen Token"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales"
-        stack = "HTML - CSS - NextJS"/>
+        description="Oxygen is a company that uses blockchain for eco-conservation, preserving ecosystems, protecting species, and boosting local economies globally."
+        stack = "HTML - CSS - NextJS"
+        repository="https://github.com/oxygen-token/web-oxygen"
+        deploy = "https://oxygentoken.org/"/>
 
       </div>
     </section>

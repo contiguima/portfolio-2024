@@ -185,8 +185,7 @@ body, .app{
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  align-items: center;
-  
+
 }
 
 .border-container{
@@ -208,7 +207,8 @@ body, .app{
 }
 
 .projects-text{
-  margin: 20vh 0;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
   text-align: center;
   font-family: var(--principal-font);
 }
@@ -226,3 +226,16 @@ body, .app{
   line-height: 0.1em;
 }
 
+.projects-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: clamp(10px, 2vw, 32px)
+}
+
+@media (max-width: 500px){
+  .projects-container{
+    justify-content: center;
+    align-items: center;
+  }
+}
