@@ -230,12 +230,17 @@ body, .app{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: clamp(10px, 2vw, 32px)
+  padding: clamp(10px, 2vw, 32px);
+  gap: 2vh;
+  justify-content: center;
 }
 
+.projects-column{
+  
+}
 @media (max-width: 500px){
   .projects-container{
-    justify-content: center;
+  
     align-items: center;
   }
 }

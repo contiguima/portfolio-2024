@@ -5,7 +5,7 @@ import Image from "next/image";
 import Navbar from "./components/navbar/Navbar"
 import BorderComponent from "./components/border_component/BorderComponent";
 import ProjectCardBig from "./components/projects_card/ProjectCardBig";
-
+import ProjectCardSmall from "./components/projects_card/ProjectCardSmall";
 
 //Styles
 import "./globals.css";
@@ -19,6 +19,7 @@ import fiverrLogo from "../../public/assets/icons/fiverr_icon.png";
 import eyesIcon from "../../public/assets/icons/eyes_icon.png";
 import spotifyLogo from "../../public/assets/icons/spotify_icon.png";
 import oxygenImg from "../../public/assets/images/oxygen_project_img.png";
+
 
 
 export default function Home() {
@@ -89,6 +90,15 @@ export default function Home() {
         stack = "HTML - CSS - NextJS"
         repository="https://github.com/oxygen-token/web-oxygen"
         deploy = "https://oxygentoken.org/"/>
+        <div className="projects-column">
+          <ProjectCardSmall
+          tag= "FRONTEND"
+          title="Legalverse"
+          description="A platform that allows you to connect with lawyers and keep your important files safe."/>
+          <ProjectCardSmall
+          tag="STARTER"
+          />
+        </div>
 
       </div>
     </section>

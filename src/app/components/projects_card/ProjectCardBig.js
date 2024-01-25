@@ -1,7 +1,7 @@
 import Image from "next/image";
 import githubIcon from "../../../../public/assets/icons/github_icon.png"
 import webIcon from "../../../../public/assets/icons/web_icon.png"
-import "./project_card.css"
+import "./project_card.scss" 
 
 const ProjectCardBig = ({tag, image, title, description, stack, repository, deploy}) =>{
     return(
