@@ -236,6 +236,9 @@ body, .app{
 }
 
 .projects-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   
 }
 @media (max-width: 500px){

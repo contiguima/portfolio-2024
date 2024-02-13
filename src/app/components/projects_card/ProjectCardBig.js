@@ -3,7 +3,7 @@ import githubIcon from "../../../../public/assets/icons/github_icon.png"
 import webIcon from "../../../../public/assets/icons/web_icon.png"
 import "./project_card.scss" 
 
-const ProjectCardBig = ({tag, image, title, description, stack, repository, deploy}) =>{
+const ProjectCardBig = ({tag, image, title, description, stack, repository, deploy, is_code}) =>{
     return(
         <div className="project-card-b">
             <div className="project-tag">
@@ -15,9 +15,11 @@ const ProjectCardBig = ({tag, image, title, description, stack, repository, depl
             <div className="project-description">
                 <h2>{title}</h2>
                 <p>{description}</p>
-                <span><b>STACK:</b> {stack}</span>
-                <div className="project-links">
-                    <div className="project-link">
+                {is_code ? (<span><b>STACK:</b> {stack}</span>) : (<div> </div>)}
+                
+               
+
+                    {is_code ? ( <div className="project-links"><div className="project-link">
                     <Image 
                     className="project-link-img"
                     src={githubIcon}
@@ -33,12 +35,21 @@ const ProjectCardBig = ({tag, image, title, description, stack, repository, depl
                     <Image 
                     className="project-link-img"
                     src={webIcon}
-                    alt="Web logo"/></div>
+                    alt="Web logo"/></div></div>) : ( <div className="project-link"><a 
+                    target="_blank" 
+                    href={deploy}>Web</a>
+                    <Image 
+                    className="project-link-img"
+                    src={webIcon}
+                    alt="Web logo"/></div>)
+                    
+                    }
+                    
                     
 
                 </div>
 
-            </div>
+            
 
 
         </div>

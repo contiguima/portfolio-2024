@@ -22,6 +22,7 @@ import oxygenImg from "../../public/assets/images/oxygen_project_img.png";
 
 
 
+
 export default function Home() {
   return (
    <div className="app">
@@ -87,20 +88,39 @@ export default function Home() {
         image={oxygenImg}
         title="Oxygen Token"
         description="Oxygen is a company that uses blockchain for eco-conservation, preserving ecosystems, protecting species, and boosting local economies globally."
-        stack = "HTML - CSS - NextJS"
+        stack = "NextJS - CSS - Google Analytics"
+        is_code={true}
         repository="https://github.com/oxygen-token/web-oxygen"
         deploy = "https://oxygentoken.org/"/>
         <div className="projects-column">
           <ProjectCardSmall
           tag= "FRONTEND"
           title="Legalverse"
-          description="A platform that allows you to connect with lawyers and keep your important files safe."/>
+          description="A platform that allows you to connect with lawyers and keep your important files safe."
+          stack= "React - Firebase - Bootstrap"
+          repository="https://github.com/contiguima/LegalVerseVf"
+          deploy="https://legalverse.ar/"
+          />
           <ProjectCardSmall
-          tag="STARTER"
+          tag="FRONTEND"
+          title="ToDoList"
+          description="A minimalist to do list to learn TailwindCSS"
+          stack="NextJS - TailwindCSS"
+          repository="https://github.com/contiguima/todo-minimalist"
           />
         </div>
-
+        <ProjectCardBig
+        tag= "SCIENCE"
+        image={oxygenImg}
+        title="SCIENCE POSTER"
+        is_code={false}
+        description="Scientific poster presented at the International Congress of Food Science and Technology (CyTAL) 2023. The title was: 'Biodegradable films of cassava and amylose activated with natamycin for the preservation of regional cheeses' directed by PhD Pamela Cuenca."
+        deploy= "https://drive.google.com/file/d/1dbDQWGuk-zd-G6zgSb56pfA87zPNFP6T/view?usp=sharing"
+        />
+       
       </div>
+      
+      <button>Load more...</button>
     </section>
    </div>
   )
