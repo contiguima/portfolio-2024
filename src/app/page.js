@@ -1,6 +1,9 @@
 //React elements
 import Image from "next/image";
 
+//Data
+import { projectsData } from "./data-projects";
+
 //Components
 import Navbar from "./components/navbar/Navbar"
 import BorderComponent from "./components/border_component/BorderComponent";
@@ -18,12 +21,14 @@ import xLogo from "../../public/assets/icons/x_icon.png";
 import fiverrLogo from "../../public/assets/icons/fiverr_icon.png";
 import eyesIcon from "../../public/assets/icons/eyes_icon.png";
 import spotifyLogo from "../../public/assets/icons/spotify_icon.png";
-import oxygenImg from "../../public/assets/images/oxygen_project_img.png";
+import oxygenImg from "../../public/assets/images/projects/oxygen_project_img.png";
 
 
 
 
 export default function Home() {
+
+
   return (
    <div className="app">
    <Navbar/>
@@ -32,6 +37,7 @@ export default function Home() {
       <Image 
         className="picture"
         src={pfpPicture}
+        alt="Picture of Constanza"
       />
       <h2>Constanza Guimaraez</h2>
       <ul>
@@ -60,7 +66,7 @@ export default function Home() {
       <h2><i>and lots of curiosity</i></h2>
       <p>If you want to know where to find me, it's probably by learning something new. I love working in dynamic environments, which allow me to combine my knowledge in processes, technology and project management to generate products with a positive impact on people's lives.</p>
       <div className="buttons-home">
-        <button className="cta-home"> 
+        <button className="cta-home" > 
           <span>SEE WHAT <br/> I'M UP TO</span>
           <Image
           className="cta-icon" 
@@ -75,7 +81,7 @@ export default function Home() {
       </div>
      </div>
     </section>
-    <section className="projects">
+    <section className="projects" id="projects">
       {/*<BorderComponent/>*/}
       <div className="projects-text">
       <h2 style={{opacity:0.8}}><b>Some really cool</b></h2>
