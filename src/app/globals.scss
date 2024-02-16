@@ -112,7 +112,7 @@ body, .app{
   gap:0.5em;
 }
 
-.buttons-home button{
+@mixin button-style{
   background-color: black;
   color: #d9d9d9;
   border: 0;
@@ -126,6 +126,10 @@ body, .app{
   align-content: center;
   justify-content: space-between;
   padding: 0.5em 1em;
+}
+
+.buttons-home button{
+  @include button-style;
 }
 
 .buttons-home button:hover{
@@ -185,6 +189,7 @@ body, .app{
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  margin: 2em 0;
 
 }
 
@@ -241,9 +246,46 @@ body, .app{
   justify-content: space-between;
   
 }
+
+.projects button{
+  @include button-style;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  
+}
 @media (max-width: 500px){
   .projects-container{
   
     align-items: center;
   }
+}
+
+
+.experience{
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.experience h1, .experience h3{
+  text-align: right;
+  line-height: 0.2em;
+}
+
+.experience h1{
+  font-family: var(--principal-font);
+  font-size: clamp(30px,6.9vw,110px);
+  
+}
+
+.experience h3{
+  font-family: var(--principal-font);
+  font-weight: 400;
+  font-size: clamp(18px, 2vw, 40px);
+  
 }

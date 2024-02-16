@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useState } from 'react';
-import "../../globals.css"
+import "../../globals.scss"
 
 const BorderComponent = () => {
   const [numSquares, setNumSquares] = useState(0);

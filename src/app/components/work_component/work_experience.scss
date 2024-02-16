@@ -1,0 +1,21 @@
+@mixin work-experience{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    border: solid white 2px;
+    border-radius: 20px;
+    padding: 1em;
+    line-height: 0.2em;
+}
+
+.work-experience-left{
+    @include work-experience;
+    text-align: left;
+    align-self: flex-end;
+}
+
+.work-experience h2{
+    font-family: var(--sec-font);
+    font-size: clamp(24px,2.08vw, 33px);    
+}
+
