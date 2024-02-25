@@ -1,0 +1,21 @@
+.education-component{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--principal-font);
+}
+
+.education-component h2{
+    font-size: clamp(36px, 2.7vw, 42px);
+    margin: 0;
+}
+.education-component h3{
+    font-family: var(--principal-font);
+    font-size: clamp(24px, 1.8vw, 34px);
+    font-weight: 100;
+    margin:0;
+}
+
+.education-component p{
+    font-size: clamp(12px, 1vw, 20px);
+    margin:0;
+}

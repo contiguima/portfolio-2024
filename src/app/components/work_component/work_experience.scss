@@ -11,11 +11,37 @@
 .work-experience-left{
     @include work-experience;
     text-align: left;
+    align-self: flex-start;
+}
+
+.work-experience-right{
+    @include work-experience;
+    text-align: right;
     align-self: flex-end;
 }
 
-.work-experience h2{
+.work-experience-left h3{
+    text-align: left;
+}
+
+.work-experience-left h3, .work-experience-right h3{
+    margin: 0.4em 0;
+    font-size: clamp(18px,1.38vw, 24px);      font-size: clamp(18px,1.38vw, 24px);    
+}
+
+.work-experience-left h4, .work-experience-right h4{
+    font-weight: 100;
+    font-size: clamp(10px,0.88vw, 16px);    
+}
+
+.work-experience-left h2, .work-experience-right h2{
     font-family: var(--sec-font);
     font-size: clamp(24px,2.08vw, 33px);    
 }
 
+
+.work-experience-left li, .work-experience-right li{
+    line-height: 1em;
+    font-family: var(--principal-font);
+    font-size: clamp(13px,1vw, 16px);    
+}

@@ -4,7 +4,7 @@ const WorkExperience = ({title, company, date, bullet1, bullet2, bullet3, placem
     return <div className={placementLeft ? "work-experience-left" : "work-experience-right"}>
         <h2>{title}</h2>
         <h3>{company}</h3>
-        <h4>{date}</h4>
+        <h4><i>{date}</i></h4>
         <ul>
             <li>{bullet1}</li>
             <li>{bullet2}</li>

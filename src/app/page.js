@@ -10,7 +10,7 @@ import BorderComponent from "./components/border_component/BorderComponent";
 import ProjectCardBig from "./components/projects_card/ProjectCardBig";
 import ProjectCardSmall from "./components/projects_card/ProjectCardSmall";
 import WorkExperience from "./components/work_component/WorkExperience";
-
+import Education from "./components/education_component/Education";
 
 //Styles
 import "./globals.scss";
@@ -24,7 +24,11 @@ import fiverrLogo from "../../public/assets/icons/fiverr_icon.png";
 import eyesIcon from "../../public/assets/icons/eyes_icon.png";
 import spotifyLogo from "../../public/assets/icons/spotify_icon.png";
 import oxygenImg from "../../public/assets/images/projects/oxygen_project_img.png";
-
+import visuals from "../../public/assets/images/collage-visuals.png"
+import nextIcon from "../../public/assets/icons/nextjsIcon.png"
+import reactIcon from "../../public/assets/icons/reactIcon.png"
+import sqlIcon from "../../public/assets/icons/sqlIcon.png"
+import tailwindIcon from "../../public/assets/icons/tailwindIcon.png"
 
 
 
@@ -144,8 +148,109 @@ export default function Home() {
         bullet3 = "Research and Development"
         placementLeft={true}
         />
+        <WorkExperience 
+          title= "FRONTEND ENGINEER"
+        company = "Oxygen Token"
+        date = "april 2023 - now"
+        bullet1 = "MVP development"
+        bullet2 = "Google Analytics"
+        bullet3 = "Research and Development"
+        placementLeft={false}
+        />
       </div>
 
+    </section>
+    <div className="line"></div>
+    <section className="education">
+      <h1>EDUCATION</h1>
+      <h3>"Who cares if I'm pretty if I fail my finals?" - Rory Gilmore</h3>
+      <div className="education-container">
+        <div className="education-list">
+          <Education
+          title="Chemical Engineering"
+          university="Universidad Nacional de Misiones"
+          description="Minor in Biotechnology"/>
+          
+          <div className="dashed-line"></div>
+          <Education
+          title="Chemical Engineering"
+          university="Universidad Nacional de Misiones"
+          description="Minor in Biotechnology"/>
+          
+          <Education
+          title="Chemical Engineering"
+          university="Universidad Nacional de Misiones"
+          description="Minor in Biotechnology"/>
+          
+        </div>
+       
+
+        <div className="education-visuals">
+          <Image src={visuals}
+          className="education-image"
+          alt="representative pictures"/>
+        </div> 
+      </div>
+    </section>
+
+    <section className="stack">
+      <h1>STACK</h1>
+      <div className="stack-carousel">
+        {/*For now we will 'mock it' */}
+        <Image src={nextIcon} alt="nextJS icon" className="stack-icon"/>
+        <Image src={reactIcon} alt= "React icon" className="stack-icon"/>
+        <Image src={sqlIcon} alt="SQL icon" className="stack-icon"/>
+        <Image src={tailwindIcon} alt= "TailwindCSS icon" className="stack-icon"/>
+      </div>
+    </section>
+    <section className="contact">
+      <div className="contact-container">
+        <div className="contact-player"></div>
+        <div className="contact-form-container">
+          <h1>LET'S <br/> TALK!</h1>
+          <form className="contact-form">
+          <div>
+        <label htmlFor="first-name">First Name:</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          required
+        />
+        
+        <label htmlFor="last-name">Last Name:</label>
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          required
+        />
+      </div>
+    
+   
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="message">Mesagge:</label>
+        <textarea
+          id="mesagge"
+          name="mesagge"
+          required
+        />
+      </div>
+      <button type="submit">Send</button>
+          </form>
+        </div>
+        
+      </div>
+      <button className="contact-resume">Dowload CV</button>
     </section>
    </div>
   )
