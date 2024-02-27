@@ -1,0 +1,35 @@
+.slider{
+    border: dashed 2px red;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+.slider button{
+    background: none;
+    border: solid 1px black;
+    border-radius: 100%;
+    color: black;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+}
+
+.slider button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.text-warning{
+    text-align: center;
+    width: 100%;
+}
+
+.text-warning h2{
+    font-family: var(--sec-font);
+    font-weight: 100;
+}

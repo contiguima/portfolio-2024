@@ -11,6 +11,7 @@ import ProjectCardBig from "./components/projects_card/ProjectCardBig";
 import ProjectCardSmall from "./components/projects_card/ProjectCardSmall";
 import WorkExperience from "./components/work_component/WorkExperience";
 import Education from "./components/education_component/Education";
+import Slider from "./components/slider_component/Slider";
 import Footer from "./components/footer/Footer";
 
 //Styles
@@ -30,11 +31,18 @@ import nextIcon from "../../public/assets/icons/nextjsIcon.png"
 import reactIcon from "../../public/assets/icons/reactIcon.png"
 import sqlIcon from "../../public/assets/icons/sqlIcon.png"
 import tailwindIcon from "../../public/assets/icons/tailwindIcon.png"
+import resumeIcon from "../../public/assets/icons/resume_icon.png"
 
 
 
 
 export default function Home() {
+
+  const stackArray = [
+    <Image src={nextIcon} alt="nextJS Icon" className="stack-icon"/>,
+    <Image src={sqlIcon} alt = "sqlIcon" className="stack-icon"/>
+
+  ]
 
 
   return (
@@ -199,11 +207,8 @@ export default function Home() {
       <h1>STACK</h1>
       <div className="stack-carousel">
         {/*For now we will 'mock it' */}
-        <Image src={nextIcon} alt="nextJS icon" className="stack-icon"/>
-        <Image src={reactIcon} alt= "React icon" className="stack-icon"/>
-        <Image src={sqlIcon} alt="SQL icon" className="stack-icon"/>
-        <Image src={tailwindIcon} alt= "TailwindCSS icon" className="stack-icon"/>
-      </div>
+       <Slider logos = "" />
+       </div>
     </section>
     <section className="contact">
       <div className="contact-container">
@@ -260,7 +265,9 @@ export default function Home() {
         </div>
         
       </div>
-      <button className="contact-resume">Dowload CV</button>
+      <button className="contact-resume">
+        <Image src={resumeIcon} alt="cv" className="resume-icon"/>
+        <p>Dowload CV</p></button>
     </section>
     <Footer/>
    </div>

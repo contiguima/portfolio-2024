@@ -468,3 +468,30 @@ body, .app{
   width: 95%;
   height: 10em;
 }
+
+.contact-resume{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: var(--principal-font);
+  font-weight: 400;
+  background-color: #F5F5F5;
+  font-size: clamp(20px, 1.5vw,30px);
+  color: black;
+  border: 0 ;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.contact-resume:hover{
+  cursor:pointer;
+  background-color: #888888;
+  color:white;
+
+}
+
+.resume-icon{
+  height: 40px;
+  width: auto;
+  align-self: center;
+}
