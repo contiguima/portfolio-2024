@@ -11,6 +11,7 @@ import ProjectCardBig from "./components/projects_card/ProjectCardBig";
 import ProjectCardSmall from "./components/projects_card/ProjectCardSmall";
 import WorkExperience from "./components/work_component/WorkExperience";
 import Education from "./components/education_component/Education";
+import Footer from "./components/footer/Footer";
 
 //Styles
 import "./globals.scss";
@@ -29,6 +30,7 @@ import nextIcon from "../../public/assets/icons/nextjsIcon.png"
 import reactIcon from "../../public/assets/icons/reactIcon.png"
 import sqlIcon from "../../public/assets/icons/sqlIcon.png"
 import tailwindIcon from "../../public/assets/icons/tailwindIcon.png"
+
 
 
 
@@ -209,13 +211,15 @@ export default function Home() {
         <div className="contact-form-container">
           <h1>LET'S <br/> TALK!</h1>
           <form className="contact-form">
-          <div>
+          <div className="name-input">
         <label htmlFor="first-name">First Name:</label>
         <input
           type="text"
           id="first-name"
           name="first-name"
           required
+          autoComplete= "off"
+          maxLength={20}
         />
         
         <label htmlFor="last-name">Last Name:</label>
@@ -224,17 +228,21 @@ export default function Home() {
           id="last-name"
           name="last-name"
           required
+          autoComplete="off"
+          maxLength={20}
         />
       </div>
     
    
-      <div>
+      <div className="email-input">
         <label htmlFor="email">Email:</label>
         <input
           type="email"
           id="email"
           name="email"
           required
+          autoComplete="off"
+          maxLength={80}
         />
       </div>
       <div>
@@ -243,6 +251,8 @@ export default function Home() {
           id="mesagge"
           name="mesagge"
           required
+          autoComplete="off"
+          maxLength={240}
         />
       </div>
       <button type="submit">Send</button>
@@ -252,6 +262,7 @@ export default function Home() {
       </div>
       <button className="contact-resume">Dowload CV</button>
     </section>
+    <Footer/>
    </div>
   )
 }
