@@ -31,6 +31,9 @@ import nextIcon from "../../public/assets/icons/nextjsIcon.png"
 import reactIcon from "../../public/assets/icons/reactIcon.png"
 import sqlIcon from "../../public/assets/icons/sqlIcon.png"
 import tailwindIcon from "../../public/assets/icons/tailwindIcon.png"
+import htmlIcon from "../../public/assets/icons/htmlIcon.png"
+import jsIcon from "../../public/assets/icons/jsIcon.png"
+import cssIcon from "../../public/assets/icons/cssIcon.png"
 import resumeIcon from "../../public/assets/icons/resume_icon.png"
 
 
@@ -40,7 +43,12 @@ export default function Home() {
 
   const stackArray = [
     <Image src={nextIcon} alt="nextJS Icon" className="stack-icon"/>,
-    <Image src={sqlIcon} alt = "sqlIcon" className="stack-icon"/>
+    <Image src={sqlIcon} alt = "sqlIcon" className="stack-icon"/>,
+    <Image src={reactIcon} alt="reactIcon" className="stack-icon"/>,
+    <Image src={tailwindIcon} alt="tailwind CSS Icon" className="stack-icon"/>,
+    <Image src={jsIcon} alt="JavaScriptIcon" className="stack-icon"/>,
+    <Image src={htmlIcon} alt="HTMLIcon" className="stack-icon"/>,
+    <Image src={cssIcon} alt="CSS Icon" className="stack-icon"/>
 
   ]
 
@@ -206,8 +214,7 @@ export default function Home() {
     <section className="stack">
       <h1>STACK</h1>
       <div className="stack-carousel">
-        {/*For now we will 'mock it' */}
-       <Slider logos = "" />
+       <Slider logos = {stackArray} />
        </div>
     </section>
     <section className="contact">

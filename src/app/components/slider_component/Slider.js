@@ -21,7 +21,9 @@ const Slider = ({logos}) => {
     return  elements.length > 0 ? (
         <div className="slider">
             <button className="left-arrow" onClick={handlePrev}>←</button>
-            <div className="slider-components"></div>
+            <div className="slider-components">
+            {logos[currentIndex]}
+            </div>
             <button className="right-arrow" onClick={handleNext}>→</button>
         </div>
     ) : (<div className="text-warning">
