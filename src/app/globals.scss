@@ -5,6 +5,11 @@
   --sec-font: 'Courier Prime', monospace;
 }
 
+*a{
+  text-decoration: none;
+  color: white;
+}
+
 body, .app{
   margin:0;
   padding: 0;
@@ -129,6 +134,7 @@ body, .app{
   align-content: center;
   justify-content: space-between;
   padding: 0.5em 1em;
+
 }
 
 .buttons-home button{
@@ -144,6 +150,7 @@ body, .app{
   border-top-right-radius: 60px;
   border-bottom-right-radius: 60px;
   text-align: left;
+  
 }
 
 .music-home{
@@ -195,6 +202,7 @@ body, .app{
   margin: 2em 0;
 
 }
+
 
 .border-container{
   display: flex;
@@ -256,6 +264,11 @@ body, .app{
   border-radius: 20px;
   
 }
+
+.projects button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
 @media (max-width: 500px){
   .projects-container{
   
@@ -275,7 +288,7 @@ body, .app{
 
 .experience h1, .experience h3{
   text-align: right;
-  line-height: 0.2em;
+  line-height: 1.2em;
 }
 
 .experience h1{
@@ -346,7 +359,12 @@ body, .app{
   height: auto;
 }
 
-@media (max-width: 800px){
+.education-visuals{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1000px){
   .education-visuals{
     display: none;
   }
@@ -484,6 +502,7 @@ body, .app{
   flex-direction: row;
   justify-content: space-around;
   font-family: var(--principal-font);
+  text-decoration: none;
   font-weight: 400;
   background-color: #F5F5F5;
   font-size: clamp(20px, 1.5vw,30px);

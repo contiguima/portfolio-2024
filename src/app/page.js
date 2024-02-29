@@ -91,7 +91,7 @@ export default function Home() {
       <p>If you want to know where to find me, it's probably by learning something new. I love working in dynamic environments, which allow me to combine my knowledge in processes, technology and project management to generate products with a positive impact on people's lives.</p>
       <div className="buttons-home">
         <button className="cta-home" > 
-          <span>SEE WHAT <br/> I'M UP TO</span>
+          <a href="#projects">SEE WHAT <br/> I'M UP TO</a>
           <Image
           className="cta-icon" 
           src={eyesIcon}/>
@@ -161,18 +161,18 @@ export default function Home() {
           title= "FRONTEND ENGINEER"
         company = "Oxygen Token"
         date = "april 2023 - now"
-        bullet1 = "MVP development"
-        bullet2 = "Google Analytics"
-        bullet3 = "Research and Development"
+        bullet1 = "MVP development using NextJS"
+        bullet2 = "Google Analytics and Next-intl in order to reach more users and identify user behavior"
+        bullet3 = "Research and Development of new features"
         placementLeft={true}
         />
         <WorkExperience 
-          title= "FRONTEND ENGINEER"
-        company = "Oxygen Token"
-        date = "april 2023 - now"
-        bullet1 = "MVP development"
-        bullet2 = "Google Analytics"
-        bullet3 = "Research and Development"
+          title= "RESEARCH AND DEVELOPMENT"
+        company = "Universidad Nacional de Misiones"
+        date = "august 2022 - now"
+        bullet1 = "Permeability test of biomaterials, principally starch-based materials"
+        bullet2 = "Writing of abstracts and posters for food and preservetion congresses"
+        bullet3 = "Data processing and analysis with Excel and Python"
         placementLeft={false}
         />
       </div>
@@ -191,14 +191,31 @@ export default function Home() {
           
           <div className="dashed-line"></div>
           <Education
-          title="Chemical Engineering"
-          university="Universidad Nacional de Misiones"
-          description="Minor in Biotechnology"/>
+          title="Coding Fellow | 24-1"
+          university="Makers Fellowship"
+          />
           
           <Education
-          title="Chemical Engineering"
-          university="Universidad Nacional de Misiones"
-          description="Minor in Biotechnology"/>
+          title="Project Managment Fundamentals | Agile & Waterfall"
+          university="Google"/>
+
+          <Education
+          title="IA Fundamentals for Data and Machine Learning"
+          university= "Platzi" />
+
+          <Education 
+          title = "Crypto & DeFi 101"
+          university="Defy Education"/>
+
+          <Education
+          title = "Enterprise Design Thinking Practitioner"
+          university="IBM"/>
+
+          <Education 
+          title="FullStack Development"
+          university="Alchemit"
+          description="JavaScript - SQL - C# - .NET - Entity Framework"/>
+
           
         </div>
        
@@ -272,9 +289,9 @@ export default function Home() {
         </div>
         
       </div>
-      <button className="contact-resume">
+      <a className="contact-resume" target="_blank" href="https://drive.google.com/file/d/12-igio6x9PYtNHBBJP-p9yzYVZV7ZukZ/view?usp=sharing">
         <Image src={resumeIcon} alt="cv" className="resume-icon"/>
-        <p>Dowload CV</p></button>
+        <p>Dowload CV</p></a>
   </section> 
     <Footer/>
    </div>
