@@ -15,7 +15,7 @@ body, .app{
   font-family: var(--principal-font);
   font-weight: 900;
   line-height:1em;
-  font-size: clamp(50px, 5.2vw, 75px);
+  font-size: clamp(40px, 5.2vw, 75px);
 }
 
 
@@ -365,7 +365,6 @@ body, .app{
 .stack-carousel{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
@@ -375,6 +374,15 @@ body, .app{
   height: auto;
   padding:0 5em;
 }
+
+@media (max-width: 800px){
+  .stack-icon{
+    max-width: 80px;
+    height: auto;
+  }
+}
+
+
 
 /*contact*/
 

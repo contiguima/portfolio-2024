@@ -1,5 +1,4 @@
 .slider{
-    border: dashed 2px red;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -22,6 +21,12 @@
     background-color: black;
     color: white;
     cursor: pointer;
+}
+
+.slider-components{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .text-warning{

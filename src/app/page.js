@@ -275,7 +275,7 @@ export default function Home() {
       <button className="contact-resume">
         <Image src={resumeIcon} alt="cv" className="resume-icon"/>
         <p>Dowload CV</p></button>
-    </section>
+  </section> 
     <Footer/>
    </div>
   )
